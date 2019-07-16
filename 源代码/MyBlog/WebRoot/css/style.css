@@ -1,0 +1,51 @@
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<!--
+.topA{
+    font-size:9pt;color:#63284A;
+    text-decoration:none;
+}
+.topA:hover{
+	font-size: 9pt;	color: #000000;
+	text-decoration:underline
+}
+a {
+	font-size: 9pt;	text-decoration: none;	color: #6E6E6E;
+	noline:expression(this.onfocus=this.blur);
+}
+a:hover {
+	font-size: 9pt;	color: #000000;
+	text-decoration:underline
+}
+.topTD{
+	font-size: 9pt;	color: #63284A;
+}
+td{
+	font-size: 9pt;	color: #655555;
+}
+input{
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #333333;
+	background-color:#F9EFF6;
+
+}
+body {
+	margin-left: 0px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 0px;	
+}
+.textarea {
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #333333;
+	border: 1px solid #999999;
+}
+.btn_bg {
+	background-image:url(../images/btn_bg.jpg); border:#436E9B thin 1px;
+	width:48px;
+	height:20px;padding:4px;
+	color:#FFFFFF;
+}
+
+-->

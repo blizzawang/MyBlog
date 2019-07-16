@@ -1,0 +1,7 @@
+//初始导入项目时，项目中无照片(front/pic文件夹为空，tb_photo表为空表)，所以以下记录不需要存入tb_photo中
+
+INSERT INTO `tb_photo` VALUES ('1', 'front/photo/pic/0.jpg', '2008年02月14日 08:57:59', '超越');
+INSERT INTO `tb_photo` VALUES ('2', 'front/photo/pic/1.jpg', '2008年02月14日 08:59:11', '水中倒影');
+INSERT INTO `tb_photo` VALUES ('3', 'front/photo/pic/2.jpg', '2008年02月14日 08:59:44', '假山、瀑布1');
+INSERT INTO `tb_photo` VALUES ('4', 'front/photo/pic/3.jpg', '2008年02月14日 08:59:11', '水中倒影2');
+INSERT INTO `tb_photo` VALUES ('5', 'front/photo/pic/4.jpg', '2008年02月14日 08:59:44', '假山、瀑布3');

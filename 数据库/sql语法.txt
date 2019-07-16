@@ -1,0 +1,95 @@
+CREATE TABLE `tb_article` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `article_typeID` smallint(6) NOT NULL,
+  `article_title` varchar(40) DEFAULT NULL,
+  `article_content` text,
+  `article_sdTime` varchar(30) DEFAULT NULL,
+  `article_create` varchar(10) DEFAULT NULL,
+  `article_info` text,
+  `article_count` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+CREATE TABLE `tb_articletype` (
+  `articleType_id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `articleType_name` varchar(20) DEFAULT NULL,
+  `articleType_info` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`articleType_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+CREATE TABLE `tb_friend` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `friend_name` varchar(20) DEFAULT NULL,
+  `friend_sex` varchar(2) DEFAULT NULL,
+  `friend_OICQ` varchar(20) DEFAULT NULL,
+  `friend_blog` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+CREATE TABLE `tb_master` (
+  `master_name` varchar(50) NOT NULL,
+  `master_password` varchar(10) DEFAULT NULL,
+  `master_sex` varchar(2) DEFAULT NULL,
+  `master_oicq` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`master_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `tb_photo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `photo_addr` text,
+  `photo_sdTime` varchar(30) DEFAULT NULL,
+  `photo_desc` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+CREATE TABLE `tb_review` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `review_articleId` int(11) DEFAULT NULL,
+  `review_author` varchar(50) DEFAULT NULL,
+  `review_content` text,
+  `review_sdTime` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `tb_word` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `word_title` varchar(50) DEFAULT NULL,
+  `word_content` text,
+  `word_sdTime` varchar(30) DEFAULT NULL,
+  `word_author` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+
+
+
+
+
+INSERT INTO tb_article VALUES(2,4,'保护环境！爱护地球！','人类好比瞬间流星，<br>自然才是永远夜空。<br>当我们炫耀着不属于自己的光亮<br>一一坠落时，<br>请留下一片干净的天空！<br>人类好比瞬间流星，<br>自然才识永远夜空。<br>当我们炫耀着不属于自己的光亮<br>一一坠落时，<br>请留下一片干净的天空！<br>人类好比瞬间流星，<br>自然才识永远夜空。<br>当我们炫耀着不属于自己的光亮<br>一一坠落时，<br>请留下一片干净的天空！<br>人类好比瞬间流星，<br>自然才识永远夜空。<br>当我们炫耀着不属于自己的光亮<br>一一坠落时，<br>请留下一片干净的天空！','2008年02月13日 17:04:29','原创','绝对原创！',1);
+INSERT INTO tb_article VALUES(3,3,'心中最向往的生活方式！','是衣来伸手、饭来张口；还是日出而作、日落而息？<br>是远离文明世界中的是是非非；还是继续追求昙花一显的那份虚荣？<br>每天都期待着发生什么，街上、商场、餐厅、公司和家里；<br>每天都在这种期待中一无所获的度过。<br>到今天，之前的每一天过的充实人们，<br>也许是为了实现他的目标、也许是想从这个世界找回点公平、也许是一种习惯。<br>满足你所有的要求，你会生存多久？<br>从今天，坚定一种信念，才会体会生存的意义！<br>是衣来伸手、饭来张口；还是日出而作、日落而息？<br>是远离文明世界中的是是非非；还是继续追求昙花一显的那份虚荣？<br>每天都期待着发生什么，街上、商场、餐厅、公司和家里；<br>每天都在这种期待中一无所获的度过。<br>到今天，之前的每一天过的充实人们，<br>也许是为了实现他的目标、也许是想从这个世界找回点公平、也许是一种习惯。<br>满足你所有的要求，你会生存多久？<br>从今天，坚定一种信念，才会体会生存的意义！','2008年02月13日 16:50:12','原创','绝对原创！',0);
+INSERT INTO tb_article VALUES(4,4,'爱护环境！保护地球！','人类好比瞬间流星，<br>自然才识永远夜空。<br>当我们炫耀着不属于自己的光亮<br>一一坠落时，<br>请留下一片干净的天空！<br>人类好比瞬间流星，<br>自然才识永远夜空。<br>当我们炫耀着不属于自己的光亮<br>一一坠落时，<br>请留下一片干净的天空！<br>人类好比瞬间流星，<br>自然才识永远夜空。<br>当我们炫耀着不属于自己的光亮<br>一一坠落时，<br>请留下一片干净的天空！','2008年02月12日 09:15:09','原创','绝对原创！',1);
+INSERT INTO tb_article VALUES(5,1,'心中最向往的居住田园！','山山水水，绿绿清清；树树草草，郁郁匆匆！<br>小溪流水，鱼儿静游；林间明暗，鸟儿幽闲！<br>微风、流水、淡黑、自然的味道！<br>鸟儿、树语、湿润、万物的生存！<br>山山水水，绿绿清清；树树草草，郁郁匆匆！<br>小溪流水，鱼儿静游；林间明暗，鸟儿幽闲！<br>微风、流水、淡黑、自然的味道！<br>鸟儿、树语、湿润、万物的生存！<br>山山水水，绿绿清清；树树草草，郁郁匆匆！<br>小溪流水，鱼儿静游；林间明暗，鸟儿幽闲！<br>微风、流水、淡黑、自然的味道！<br>鸟儿、树语、湿润、万物的生存！<br>山山水水，绿绿清清；树树草草，郁郁匆匆！<br>小溪流水，鱼儿静游；林间明暗，鸟儿幽闲！<br>微风、流水、淡黑、自然的味道！<br>鸟儿、树语、湿润、万物的生存！<br>山山水水，绿绿清清；树树草草，郁郁匆匆！<br>小溪流水，鱼儿静游；林间明暗，鸟儿幽闲！<br>微风、流水、淡黑、自然的味道！<br>鸟儿、树语、湿润、万物的生存！','2008年02月13日 16:51:14','原创','绝对原创！',4);
+INSERT INTO tb_article VALUES(6,2,'心中最向往的一顿大餐！','天上飞的、地上跑的、水里游的！<br>鱼和熊掌、天鹅肉，再加一瓶二锅头！<br>天上飞的、地上跑的、水里游的！<br>鱼和熊掌、天鹅肉，再加一瓶二锅头！<br>天上飞的、地上跑的、水里游的！<br>鱼和熊掌、天鹅肉，再加一瓶二锅头！<br>天上飞的、地上跑的、水里游的！<br>鱼和熊掌、天鹅肉，再加一瓶二锅头！<br>天上飞的、地上跑的、水里游的！<br>鱼和熊掌、天鹅肉，再加一瓶二锅头！<br>天上飞的、地上跑的、水里游的！<br>鱼和熊掌、天鹅肉，再加一瓶二锅头！','2008年02月13日 16:57:56','原创','绝对原创！',0);
+
+
+
+INSERT INTO tb_articleType VALUES(1,'个人随想','记录心里所想');
+INSERT INTO tb_articleType VALUES(2,'个人日记','记录一天所发生的事情');
+INSERT INTO tb_articleType VALUES(3,'人生感悟','记录生活中所发生的事情');
+INSERT INTO tb_articleType VALUES(4,'推荐文章','推荐好的文章');
+
+
+
+
+INSERT INTO tb_friend VALUES(1,'许久','男','10500646A','http://www.yxq.com.cn');
+INSERT INTO tb_friend VALUES(2,'雨飞','女','10568974A','http://www.yxq.com.cn');
+INSERT INTO tb_friend VALUES(3,'莫明','男','56987425A','http://www.yxq.com.cn');
+INSERT INTO tb_friend VALUES(4,'荣少天','男','25987464A','http://www.yxq.com.cn');
+
+
+
+INSERT INTO tb_master VALUES('admin','111','男','10500646*');
+
+
+
+INSERT INTO tb_word VALUES(1,'支持！','博主的文章写的还不错，支持你！','2008年02月14日 09:05:55','无名');
+INSERT INTO tb_word VALUES(2,'建议','建议博主再发表一些好的文章！','2008年02月14日 09:06:46','匿名好友');
+
+
+
+
+
